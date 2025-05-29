@@ -22,44 +22,44 @@
   </head>
   <body class="bg-stone-10">
     <!-- BANNER PRINCIPAL DE LOS CURSOS -->
-    <div class="bg-yellow-300 py-2 px-4 flex justify-between items-center">
-      <p class="text-sm font-medium">Cursos desde $19 MXN</p>
-      <div class="flex items-center gap-4">
-        <p class="text-sm font-medium">13:00:00 hrs restantes</p>
-        <button class="bg-black text-white text-sm px-3 py-1 rounded-full">
+    <div class="bg-yellow-300 py-2 px-6 flex justify-between items-center">
+      <p class="text-base font-medium">Cursos desde $19 MXN</p>
+      <div class="flex items-center gap-8">
+        <p class="text-base font-medium">13:00:00 hrs restantes</p>
+        <button class="bg-black text-white text-base px-4 py-2 rounded-full">
           Ver cursos en promoción
         </button>
-        <button class="text-black">×</button>
+        <button class="text-black text-lg">×</button>
       </div>
     </div>
 
     <!-- NAVEGACIÓN DE SECCIONES -->
     <nav
-      class="bg-[#1a2e1a] text-white py-4 px-10 flex justify-between items-center"
+      class="bg-[#1a2e1a] text-white py-6 px-12 flex justify-between items-center"
     >
-      <div class="flex items-center gap-20">
-        <h1 class="text-2xl font-bold">EDUKA</h1>
-        <div class="flex gap-20">
-          <a href="#" class="hover:underline">Cursos</a>
-          <a href="#" class="hover:underline">Blog</a>
-          <a href="#" class="hover:underline">Nosotros</a>
+      <div class="flex items-center gap-32">
+        <h1 class="text-3xl font-bold">EDUKA</h1>
+        <div class="flex gap-24">
+          <a href="#" class="hover:underline text-lg">Cursos</a>
+          <a href="#" class="hover:underline text-lg">Blog</a>
+          <a href="#" class="hover:underline text-lg">Nosotros</a>
         </div>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-8">
         <div class="relative">
           <input
             type="text"
-            class="bg-white-20 rounded-full px-4 py-1 w-[350px]"
-            placeholder="Buscar cursos..."
+            class="bg-white-20 rounded-full pl-5 pr-2 py-1 w-[400px] text-black"
+            placeholder="🔎"
           />
         </div>
         <button
-          class="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-[#1a2e1a] transition"
+          class="border border-white rounded-full px-6 text-lg hover:bg-white hover:text-[#1a2e1a] transition"
         >
           Iniciar sesión
         </button>
         <button
-          class="border border-white rounded-full px-4 py-1 hover:bg-white hover:text-[#1a2e1a] transition"
+          class="border border-white rounded-full px-6 text-lg hover:bg-white hover:text-[#1a2e1a] transition"
         >
           Unirse ahora
         </button>
@@ -67,44 +67,44 @@
     </nav>
 
     <!-- Sección de texto de banner -->
-    <section
-      class="relative bg-[url('./textura-de-papel-blanco.jpg')] bg-stone-200 bg-cover bg-center py-28"
-    >
-      <div
-        class="container mx-auto max-w-6xl px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between gap-16"
+   <section
+  class="relative bg-[url('./textura-de-papel-blanco.jpg')] bg-stone-200 bg-cover bg-center py-16"
+>
+  <div
+    class="container mx-auto max-w-6xl px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between gap-20"
+  >
+    <!-- Texto a la izquierda -->
+    <div class="w-full md:w-1/2 text-left z-10">
+      <h2 class="text-6xl font-extrabold text-[#1a2e1a] leading-tight">
+        Más de 1.000 cursos online para creativos
+      </h2>
+      <button
+        class="mt-12 bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-bold text-lg px-12 py-3 rounded-full transition"
       >
-        <!-- Texto a la izquierda -->
-        <div class="w-full md:w-1/2 text-left z-10">
-          <h2 class="text-6xl font-extrabold text-[#1a2e1a] leading-tight">
-            Más de 1.000 cursos online para creativos
-          </h2>
-          <button
-            class="mt-10 bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-bold text-lg px-12 py-4 rounded-full transition"
-          >
-            Unirse ahora
-          </button>
-        </div>
+        Unirse ahora
+      </button>
+    </div>
 
-        <!-- Imagen decorativa más grande -->
-        <div class="relative w-full md:w-1/2 min-h-[500px]">
-          <img
-            src="/img/Estrella.png"
-            alt="Estrella decorativa"
-            class="absolute z-0 w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.6]"
-          />
-          <img
-            src="/img/People.png"
-            alt="Estudiante de EDUKA"
-            class="relative z-10 w-full h-auto scale-[1.6]"
-          />
-        </div>
-      </div>
-    </section>
+    <!-- Imagen decorativa más grande -->
+    <div class="relative w-full md:w-1/2 min-h-[500px]">
+      <img
+        src="/img/Estrella.png"
+        alt="Estrella decorativa"
+        class="absolute z-0 w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.6]"
+      />
+      <img
+        src="/img/People.png"
+        alt="Estudiante de EDUKA"
+        class="relative z-10 w-full h-auto scale-[1.6]"
+      />
+    </div>
+  </div>
+</section>
 
-    <!-- Imagen decorativa inferior, como separador
-      <div class="absolute bottom-[-40px] left-0 z-30 w-full">
-        <img src="/S-R.png" alt="Separador decorativo" class="w-full h-auto" />
-      </div> -->
+<!-- Imagen decorativa como separador -->
+<div class="relative z-30 w-full">
+  <img src="/S-R.png" alt="Separador decorativo" class="w-full h-auto" />
+</div>
 
     <!-- Cursos recomendados -->
     <section class="py-8 bg-[#ecece2]">
@@ -121,7 +121,7 @@
           >
             <div class="p-2">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
+                src="/img/Cursos/Introducción-mezcla.jpeg"
                 alt="Curso de mezcla musical"
                 class="w-full h-44 object-cover rounded-md"
               />
@@ -131,7 +131,8 @@
                 Introducción a la mezcla musical
               </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Aprende a mezclar música con un profesional usando Logic...
+                Un curso de Nico Quiroga Aprende a mezclar música con un
+                autentico profesional usando Logic...
               </p>
               <div class="flex justify-center">
                 <button
@@ -149,7 +150,7 @@
           >
             <div class="p-2">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
+                src="/img//Cursos/Ilustración.jpeg"
                 alt="Curso de ilustración digital"
                 class="w-full h-44 object-cover rounded-md"
               />
@@ -159,7 +160,8 @@
                 Ilustración digital de personajes
               </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Aprende técnicas para crear ilustraciones digitales únicas...
+                Un curso de Geoff Pascual Aprende a utilizar herramientas
+                digitales para dar vida a...
               </p>
               <div class="flex justify-center">
                 <button
@@ -177,7 +179,7 @@
           >
             <div class="p-2">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
+                src="/img/Cursos/Diseño.jpeg"
                 alt="Curso de tipografía"
                 class="w-full h-44 object-cover rounded-md"
               />
@@ -187,7 +189,8 @@
                 Diseño de tipografía para brand storytelling
               </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Diseña tipografías únicas para potenciar tu marca personal.
+                Un curso de Ellen Lupton Diseña Aprende a desarrollar
+                tipografias fuertes que expresen la voz y...
               </p>
               <div class="flex justify-center">
                 <button
@@ -205,7 +208,7 @@
           >
             <div class="p-2">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
+                src="/img/Cursos/Creación.jpeg"
                 alt="Curso de personajes 3D"
                 class="w-full h-44 object-cover rounded-md"
               />
@@ -215,8 +218,8 @@
                 Creación de personajes en 3D con Blender
               </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Crea tus protagonistas animados en 3D y conviértete en un
-                modelador profesional...
+                Un curso de Mohamed Chahin Crea un protagonista increíble en 3D
+                y aprende a...
               </p>
               <div class="flex justify-center">
                 <button
@@ -234,7 +237,7 @@
           >
             <div class="p-2">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
+                src="/img/Cursos/Food.jpeg"
                 alt="Curso de Food Styling"
                 class="w-full h-44 object-cover rounded-md"
               />
@@ -244,8 +247,8 @@
                 Food Styling: el arte del emplatado
               </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Descubre el arte de emplatado de comidas para crear y
-                fotografiar composiciones de alimentos...
+                Un curso de Jodi Moreno Descubre el arte del emplatado de
+                comidas para crear y fotografiar composiciones de alimentos...
               </p>
               <div class="flex justify-center">
                 <button
@@ -263,7 +266,7 @@
           >
             <div class="p-2">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
+                src="/img/Cursos/Introducción.jpeg"
                 alt="Curso de storytelling"
                 class="w-full h-44 object-cover rounded-md"
               />
@@ -273,8 +276,8 @@
                 Introducción al storytelling personal
               </h3>
               <p class="text-sm text-gray-600 mb-3">
-                Aprende a contar la historia de tus clientes y de tu marca de
-                manera efectiva...
+                Un curso de Antonio Nunez Lopez Aprende a captar la atención de
+                tus clientes y a cautivarlos mediante el...
               </p>
               <div class="flex justify-center">
                 <button
@@ -584,7 +587,7 @@
         <div
           class="pt-8 mt-8 border-t border-gray-200 text-center text-sm text-gray-500"
         >
-          <div class="flex flex-wrap justify-center gap-4">
+          <div class="flex flex-wrap gap-4">
             <span>© 2025 EDUKA</span>
             <a href="#" class="hover:text-gray-900">Condiciones de Uso</a>
             <a href="#" class="hover:text-gray-900">Política de privacidad</a>
