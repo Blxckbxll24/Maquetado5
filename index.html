@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EDUKA - Cursos online para creativos</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style/style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
@@ -17,31 +18,10 @@
         background-repeat: no-repeat;
         background-size: cover;
       }
-
-      .starburst {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        background-color: #fde047;
-        clip-path: polygon(
-          50% 0%,
-          61% 35%,
-          98% 35%,
-          68% 57%,
-          79% 91%,
-          50% 70%,
-          21% 91%,
-          32% 57%,
-          2% 35%,
-          39% 35%
-        );
-        transform: scale(1.5);
-        z-index: 0;
-      }
     </style>
   </head>
-  <body class="bg-stone-100">
-    <!-- Promotion Banner -->
+  <body class="bg-stone-10">
+    <!-- BANNER PRINCIPAL DE LOS CURSOS -->
     <div class="bg-yellow-300 py-2 px-4 flex justify-between items-center">
       <p class="text-sm font-medium">Cursos desde $19 MXN</p>
       <div class="flex items-center gap-4">
@@ -53,13 +33,13 @@
       </div>
     </div>
 
-    <!-- Navigation -->
+    <!-- NAVEGACIÓN DE SECCIONES -->
     <nav
-      class="bg-[#1a2e1a] text-white py-4 px-6 flex justify-between items-center"
+      class="bg-[#1a2e1a] text-white py-4 px-10 flex justify-between items-center"
     >
-      <div class="flex items-center gap-8">
+      <div class="flex items-center gap-20">
         <h1 class="text-2xl font-bold">EDUKA</h1>
-        <div class="flex gap-6">
+        <div class="flex gap-20">
           <a href="#" class="hover:underline">Cursos</a>
           <a href="#" class="hover:underline">Blog</a>
           <a href="#" class="hover:underline">Nosotros</a>
@@ -86,221 +66,267 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Sección de texto de banner -->
     <section
-      class="relative bg-[url('./textura-de-papel-blanco.jpg')] bg-stone-200 overflow-hidden bg-cover bg-center"
+      class="relative bg-[url('./textura-de-papel-blanco.jpg')] bg-stone-200 bg-cover bg-center py-28"
     >
-      <div class="container mx-auto px-6 py-16 flex items-center">
-        <div class="max-w-lg z-10">
-          <h2 class="text-5xl font-bold text-[#1a2e1a] leading-tight">
+      <div
+        class="container mx-auto max-w-6xl px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-between gap-16"
+      >
+        <!-- Texto a la izquierda -->
+        <div class="w-full md:w-1/2 text-left z-10">
+          <h2 class="text-6xl font-extrabold text-[#1a2e1a] leading-tight">
             Más de 1.000 cursos online para creativos
           </h2>
           <button
-            class="mt-8 bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-medium px-6 py-3 rounded-full transition"
+            class="mt-10 bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-bold text-lg px-12 py-4 rounded-full transition"
           >
             Unirse ahora
           </button>
         </div>
-        <div class="relative ml-auto">
-          <div class="starburst absolute -right-20 -bottom-10"></div>
+
+        <!-- Imagen decorativa más grande -->
+        <div class="relative w-full md:w-1/2 min-h-[500px]">
           <img
-            src="pendejo.png"
+            src="/img/Estrella.png"
+            alt="Estrella decorativa"
+            class="absolute z-0 w-full h-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-[1.6]"
+          />
+          <img
+            src="/img/People.png"
             alt="Estudiante de EDUKA"
-            class="relative z-10 h-96 object-cover"
+            class="relative z-10 w-full h-auto scale-[1.6]"
           />
         </div>
       </div>
-      <div class="h-16 wave-bg absolute bottom-0 w-full"></div>
     </section>
+
+    <!-- Imagen decorativa inferior, como separador
+      <div class="absolute bottom-[-40px] left-0 z-30 w-full">
+        <img src="/S-R.png" alt="Separador decorativo" class="w-full h-auto" />
+      </div> -->
 
     <!-- Cursos recomendados -->
-    <section class="py-16 bg-[#ecece2]">
-      <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center text-[#1a2e1a] mb-12">
+    <section class="py-8 bg-[#ecece2]">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-[#1a2e1a] mb-8">
           Cursos recomendados
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Course Card 1 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
-              alt="Curso de mezcla musical"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="font-bold text-lg mb-2">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-1 justify-items-center"
+        >
+          <!-- Curso 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg w-full max-w-[17.5rem] overflow-hidden"
+          >
+            <div class="p-2">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
+                alt="Curso de mezcla musical"
+                class="w-full h-44 object-cover rounded-md"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-base mb-1">
                 Introducción a la mezcla musical
               </h3>
-              <p class="text-sm text-gray-600 mb-4">
+              <p class="text-sm text-gray-600 mb-3">
                 Aprende a mezclar música con un profesional usando Logic...
               </p>
-              <button
-                class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-medium px-4 py-2 rounded-full text-sm transition"
-              >
-                Ver ahora
-              </button>
+              <div class="flex justify-center">
+                <button
+                  class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] text-sm font-medium px-3 py-1.5 rounded-full transition"
+                >
+                  Ver ahora
+                </button>
+              </div>
             </div>
           </div>
-          <!-- Course Card 2 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
-              alt="Curso de ilustración digital"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="font-bold text-lg mb-2">
+
+          <!-- Curso 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg w-full max-w-[17.5rem] overflow-hidden"
+          >
+            <div class="p-2">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
+                alt="Curso de ilustración digital"
+                class="w-full h-44 object-cover rounded-md"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-base mb-1">
                 Ilustración digital de personajes
               </h3>
-              <p class="text-sm text-gray-600 mb-4">
+              <p class="text-sm text-gray-600 mb-3">
                 Aprende técnicas para crear ilustraciones digitales únicas...
               </p>
-              <button
-                class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-medium px-4 py-2 rounded-full text-sm transition"
-              >
-                Ver ahora
-              </button>
+              <div class="flex justify-center">
+                <button
+                  class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] text-sm font-medium px-3 py-1.5 rounded-full transition"
+                >
+                  Ver ahora
+                </button>
+              </div>
             </div>
           </div>
-          <!-- Course Card 3 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
-              alt="Curso de tipografía"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="font-bold text-lg mb-2">
+
+          <!-- Curso 3 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg w-full max-w-[17.5rem] overflow-hidden"
+          >
+            <div class="p-2">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-HsM0NlJJAHwEBJWcNnwGL7GLyxSka2.png"
+                alt="Curso de tipografía"
+                class="w-full h-44 object-cover rounded-md"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-base mb-1">
                 Diseño de tipografía para brand storytelling
               </h3>
-              <p class="text-sm text-gray-600 mb-4">
+              <p class="text-sm text-gray-600 mb-3">
                 Diseña tipografías únicas para potenciar tu marca personal.
               </p>
-              <button
-                class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-medium px-4 py-2 rounded-full text-sm transition"
-              >
-                Ver ahora
-              </button>
+              <div class="flex justify-center">
+                <button
+                  class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] text-sm font-medium px-3 py-1.5 rounded-full transition"
+                >
+                  Ver ahora
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-        <!-- More Featured Courses -->
-    <section class="py-16 bg-[#ecece2] relative">
-      <div
-        class="absolute top-0 right-0 starburst transform scale-150 translate-x-1/4 -translate-y-1/4"
-      ></div>
-      <div class="container mx-auto px-6 relative z-10">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Course Card 1 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
-              alt="Curso de personajes 3D"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="font-bold text-lg mb-2">
+          <!-- Curso 4 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg w-full max-w-[17.5rem] overflow-hidden"
+          >
+            <div class="p-2">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
+                alt="Curso de personajes 3D"
+                class="w-full h-44 object-cover rounded-md"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-base mb-1">
                 Creación de personajes en 3D con Blender
               </h3>
-              <p class="text-sm text-gray-600 mb-4">
+              <p class="text-sm text-gray-600 mb-3">
                 Crea tus protagonistas animados en 3D y conviértete en un
                 modelador profesional...
               </p>
-              <button
-                class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-medium px-4 py-2 rounded-full text-sm transition"
-              >
-                Ver ahora
-              </button>
+              <div class="flex justify-center">
+                <button
+                  class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] text-sm font-medium px-3 py-1.5 rounded-full transition"
+                >
+                  Ver ahora
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Course Card 2 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
-              alt="Curso de Food Styling"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="font-bold text-lg mb-2">
+          <!-- Curso 5 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg w-full max-w-[17.5rem] overflow-hidden"
+          >
+            <div class="p-2">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
+                alt="Curso de Food Styling"
+                class="w-full h-44 object-cover rounded-md"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-base mb-1">
                 Food Styling: el arte del emplatado
               </h3>
-              <p class="text-sm text-gray-600 mb-4">
+              <p class="text-sm text-gray-600 mb-3">
                 Descubre el arte de emplatado de comidas para crear y
                 fotografiar composiciones de alimentos...
               </p>
-              <button
-                class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-medium px-4 py-2 rounded-full text-sm transition"
-              >
-                Ver ahora
-              </button>
+              <div class="flex justify-center">
+                <button
+                  class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] text-sm font-medium px-3 py-1.5 rounded-full transition"
+                >
+                  Ver ahora
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Course Card 3 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-md">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
-              alt="Curso de storytelling"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="font-bold text-lg mb-2">
+          <!-- Curso 6 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg w-full max-w-[17.5rem] overflow-hidden"
+          >
+            <div class="p-2">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M6F55X699QLqbNaEJstfZxx85As5z2.png"
+                alt="Curso de storytelling"
+                class="w-full h-44 object-cover rounded-md"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-base mb-1">
                 Introducción al storytelling personal
               </h3>
-              <p class="text-sm text-gray-600 mb-4">
+              <p class="text-sm text-gray-600 mb-3">
                 Aprende a contar la historia de tus clientes y de tu marca de
                 manera efectiva...
               </p>
-              <button
-                class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-medium px-4 py-2 rounded-full text-sm transition"
-              >
-                Ver ahora
-              </button>
+              <div class="flex justify-center">
+                <button
+                  class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] text-sm font-medium px-3 py-1.5 rounded-full transition"
+                >
+                  Ver ahora
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="flex justify-center mt-12">
+        <!-- Ver más cursos -->
+        <div class="flex justify-center mt-8">
           <button
-            class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-medium px-6 py-3 rounded-full transition"
+            class="bg-yellow-300 hover:bg-yellow-400 text-[#1a2e1a] font-bold px-5 py-2.5 rounded-full transition"
           >
             Ver más cursos de EDUKA
           </button>
         </div>
       </div>
-      <div
-        class="h-16 wave-bg absolute bottom-0 w-full transform rotate-180"
-      ></div>
     </section>
 
-    <!-- What to expect section -->
+    <!-- ¿QUÉ ESPERAR DE UN CURSO EDUKA? -->
     <section class="py-16 bg-[#ecece2]">
-      <div class="container mx-auto px-6">
+      <div class="container mx-auto px-4 sm:px-8">
         <h2 class="text-4xl font-bold text-center text-[#1a2e1a] mb-16">
           ¿Qué esperar de un curso de <span class="font-serif">EDUKA</span>?
         </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-5xl">
+          <!-- APRENDE A TU RITMO -->
           <div class="flex gap-4">
-            <div class="text-6xl font-bold text-indigo-300">1.</div>
-            <div>
-              <h3 class="text-xl font-bold mb-3">Aprende a tu ritmo</h3>
-              <p class="text-gray-700">
+            <div class="text-5xl font-bold text-indigo-300">1.</div>
+            <div class="w-full max-w-md">
+              <h3 class="text-[24px] pt-4 font-bold mb-3">
+                Aprende a tu ritmo
+              </h3>
+              <p class="text-justify text-gray-600">
                 Disfruta aprendiendo desde casa, sin horarios y a tu ritmo. Tú
                 decides cuándo seguir con cada unidad.
               </p>
             </div>
           </div>
 
+          <!-- COMPARTE CONOCIMIENTOS -->
           <div class="flex gap-4">
-            <div class="text-6xl font-bold text-indigo-300">2.</div>
-            <div>
-              <h3 class="text-xl font-bold mb-3">Comparte conocimientos</h3>
-              <p class="text-gray-700">
+            <div class="text-5xl font-bold text-indigo-300">2.</div>
+            <div class="w-full max-w-md">
+              <h3 class="text-[24px] pt-4 font-bold mb-3">
+                Comparte conocimientos
+              </h3>
+              <p class="text-justify text-gray-600">
                 Pregunta, pide opinión y ofrece soluciones. Comparte tu
                 experiencia de aprendizaje con otros estudiantes de la comunidad
                 tan apasionados por la creatividad como tú.
@@ -308,13 +334,14 @@
             </div>
           </div>
 
+          <!-- CONOCE A PROFESORES -->
           <div class="flex gap-4">
-            <div class="text-6xl font-bold text-indigo-300">3.</div>
-            <div>
-              <h3 class="text-xl font-bold mb-3">
+            <div class="text-5xl font-bold text-indigo-300">3.</div>
+            <div class="w-full max-w-md">
+              <h3 class="text-[24px] pt-4 font-bold mb-3">
                 Conoce a profesores expertos
               </h3>
-              <p class="text-gray-700">
+              <p class="text-justify text-gray-600">
                 Cada profesor te transmitirá sus conocimientos con pasión,
                 ofreciéndote explicaciones claras y una perspectiva profesional
                 en cada lección.
@@ -322,11 +349,14 @@
             </div>
           </div>
 
+          <!-- CONECTA CON CREATIVOS -->
           <div class="flex gap-4">
-            <div class="text-6xl font-bold text-indigo-300">4.</div>
-            <div>
-              <h3 class="text-xl font-bold mb-3">Conecta con creativos</h3>
-              <p class="text-gray-700">
+            <div class="text-5xl font-bold text-indigo-300">4.</div>
+            <div class="w-full max-w-md">
+              <h3 class="text-[24px] pt-4 font-bold mb-3">
+                Conecta con creativos
+              </h3>
+              <p class="text-justify text-gray-600">
                 Esta comunidad cuenta con millones de usuarios de todo el mundo,
                 personas curiosas y con ganas de explorar y expresar su
                 creatividad.
@@ -336,7 +366,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- Course Categories Section -->
     <section class="py-16 bg-[#1a2e1a] text-white relative overflow-hidden">
