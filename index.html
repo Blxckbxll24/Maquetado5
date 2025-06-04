@@ -134,10 +134,10 @@
 
     <!-- Sección de texto de banner -->
     <section
-      class="w-full min-h-screen bg-[url('./img/Fondo-Banner.png')] bg-cover bg-center bg-no-repeat flex items-center"
+      class="w-full min-h-screen bg-[url('./img/Fondo-Banner.png')] bg-cover bg-center bg-no-repeat flex items-start sm:items-center py-16 sm:py-0"
     >
       <div
-        class="w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-start gap-8 md:gap-20"
+        class="w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-16 flex flex-col md:flex-row items-start md:items-center justify-start gap-8 md:gap-20 mt-0 sm:mt-0"
       >
         <div class="w-full md:w-1/2 text-left">
           <h2
@@ -254,9 +254,9 @@
             </div>
           </div>
 
-          <!-- Curso 4 -->
+          <!-- Curso 4 (Oculto en mobile) -->
           <div
-            class="bg-white rounded-2xl shadow-lg w-full max-w-[16rem] sm:max-w-[17.5rem] overflow-hidden"
+            class="hidden sm:block bg-white rounded-2xl shadow-lg w-full max-w-[16rem] sm:max-w-[17.5rem] overflow-hidden"
           >
             <div class="p-2">
               <img
@@ -283,9 +283,9 @@
             </div>
           </div>
 
-          <!-- Curso 5 -->
+          <!-- Curso 5 (Oculto en mobile) -->
           <div
-            class="bg-white rounded-2xl shadow-lg w-full max-w-[16rem] sm:max-w-[17.5rem] overflow-hidden"
+            class="hidden sm:block bg-white rounded-2xl shadow-lg w-full max-w-[16rem] sm:max-w-[17.5rem] overflow-hidden"
           >
             <div class="p-2">
               <img
@@ -312,9 +312,9 @@
             </div>
           </div>
 
-          <!-- Curso 6 -->
+          <!-- Curso 6 (Oculto en mobile) -->
           <div
-            class="bg-white rounded-2xl shadow-lg w-full max-w-[16rem] sm:max-w-[17.5rem] overflow-hidden"
+            class="hidden sm:block bg-white rounded-2xl shadow-lg w-full max-w-[16rem] sm:max-w-[17.5rem] overflow-hidden"
           >
             <div class="p-2">
               <img
@@ -354,72 +354,80 @@
     </section>
 
     <!-- ¿QUÉ ESPERAR DE UN CURSO EDUKA? -->
-<section
-  class="w-full min-h-screen bg-[url('./img/Fondo.png')] bg-cover bg-center bg-no-repeat py-8 sm:py-12 flex items-center justify-center"
->
-  <div class="container mx-auto px-4 sm:px-8 py-10 sm:py-16">
-    <h2
-      class="text-2xl sm:text-4xl font-bold text-center text-[#1a2e1a] mb-10 sm:mb-20 leading-snug"
+    <section
+      class="w-full min-h-screen bg-[url('./img/Fondo.png')] bg-cover bg-center bg-no-repeat flex items-center justify-center"
     >
-      ¿Qué esperar de un curso de <span class="font-serif">EDUKA</span>?
-    </h2>
+      <div class="container w-full sm:max-w-6xl px-6 sm:px-8 py-20 sm:py-16">
+        <h2
+          class="text-2xl sm:text-4xl font-bold text-center text-[#1a2e1a] mb-10 sm:mb-20 leading-snug"
+        >
+          ¿Qué esperar de un curso de <span class="font-serif">EDUKA</span>?
+        </h2>
 
-    <div class="flex flex-col sm:grid sm:grid-cols-2 gap-y-12 sm:gap-12 items-center justify-center">
-      <!-- APRENDE A TU RITMO -->
-      <div class="flex gap-3 sm:gap-4 max-w-sm mx-auto">
-        <div class="text-2xl sm:text-5xl font-bold text-indigo-300">1.</div>
-        <div class="w-full">
-          <h3 class="text-lg sm:text-[24px] font-bold mb-1 sm:mb-2">
-            Aprende a tu ritmo
-          </h3>
-          <p class="text-sm sm:text-base text-gray-600 text-justify">
-            Disfruta aprendiendo desde casa, sin horarios y a tu ritmo. Tú decides cuándo seguir con cada unidad.
-          </p>
+        <div
+          class="flex flex-col sm:grid sm:grid-cols-2 gap-y-12 sm:gap-12 items-center justify-center"
+        >
+          <!-- APRENDE A TU RITMO -->
+          <div class="flex gap-3 sm:gap-4 w-full sm:max-w-sm mx-auto">
+            <div class="text-2xl sm:text-5xl font-bold text-indigo-300">1.</div>
+            <div class="w-full">
+              <h3 class="text-lg sm:text-[24px] font-bold mb-1 sm:mb-2">
+                Aprende a tu ritmo
+              </h3>
+              <p class="text-sm sm:text-base text-gray-600 text-justify">
+                Disfruta aprendiendo desde casa, sin horarios y a tu ritmo. Tú
+                decides cuándo seguir con cada unidad.
+              </p>
+            </div>
+          </div>
+
+          <!-- COMPARTE CONOCIMIENTOS -->
+          <div class="flex gap-3 sm:gap-4 w-full sm:max-w-sm mx-auto">
+            <div class="text-2xl sm:text-5xl font-bold text-indigo-300">2.</div>
+            <div class="w-full">
+              <h3 class="text-lg sm:text-[24px] font-bold mb-1 sm:mb-2">
+                Comparte conocimientos
+              </h3>
+              <p class="text-sm sm:text-base text-gray-600 text-justify">
+                Pregunta, pide opinión y ofrece soluciones. Comparte tu
+                experiencia con otros estudiantes apasionados por la creatividad
+                como tú.
+              </p>
+            </div>
+          </div>
+
+          <!-- CONOCE A PROFESORES -->
+          <div class="flex gap-3 sm:gap-4 w-full sm:max-w-sm mx-auto">
+            <div class="text-2xl sm:text-5xl font-bold text-indigo-300">3.</div>
+            <div class="w-full">
+              <h3 class="text-lg sm:text-[24px] font-bold mb-1 sm:mb-2">
+                Conoce a profesores expertos
+              </h3>
+              <p class="text-sm sm:text-base text-gray-600 text-justify">
+                Cada profesor te transmitirá sus conocimientos con pasión,
+                explicaciones claras y una perspectiva profesional en cada
+                lección.
+              </p>
+            </div>
+          </div>
+
+          <!-- CONECTA CON CREATIVOS -->
+          <div class="flex gap-3 sm:gap-4 w-full sm:max-w-sm mx-auto">
+            <div class="text-2xl sm:text-5xl font-bold text-indigo-300">4.</div>
+            <div class="w-full">
+              <h3 class="text-lg sm:text-[24px] font-bold mb-1 sm:mb-2">
+                Conecta con creativos
+              </h3>
+              <p class="text-sm sm:text-base text-gray-600 text-justify">
+                Esta comunidad cuenta con millones de usuarios de todo el mundo,
+                personas curiosas y con ganas de explorar y expresar su
+                creatividad.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- COMPARTE CONOCIMIENTOS -->
-      <div class="flex gap-3 sm:gap-4 max-w-sm mx-auto">
-        <div class="text-2xl sm:text-5xl font-bold text-indigo-300">2.</div>
-        <div class="w-full">
-          <h3 class="text-lg sm:text-[24px] font-bold mb-1 sm:mb-2">
-            Comparte conocimientos
-          </h3>
-          <p class="text-sm sm:text-base text-gray-600 text-justify">
-            Pregunta, pide opinión y ofrece soluciones. Comparte tu experiencia con otros estudiantes apasionados por la creatividad como tú.
-          </p>
-        </div>
-      </div>
-
-      <!-- CONOCE A PROFESORES -->
-      <div class="flex gap-3 sm:gap-4 max-w-sm mx-auto">
-        <div class="text-2xl sm:text-5xl font-bold text-indigo-300">3.</div>
-        <div class="w-full">
-          <h3 class="text-lg sm:text-[24px] font-bold mb-1 sm:mb-2">
-            Conoce a profesores expertos
-          </h3>
-          <p class="text-sm sm:text-base text-gray-600 text-justify">
-            Cada profesor te transmitirá sus conocimientos con pasión, explicaciones claras y una perspectiva profesional en cada lección.
-          </p>
-        </div>
-      </div>
-
-      <!-- CONECTA CON CREATIVOS -->
-      <div class="flex gap-3 sm:gap-4 max-w-sm mx-auto">
-        <div class="text-2xl sm:text-5xl font-bold text-indigo-300">4.</div>
-        <div class="w-full">
-          <h3 class="text-lg sm:text-[24px] font-bold mb-1 sm:mb-2">
-            Conecta con creativos
-          </h3>
-          <p class="text-sm sm:text-base text-gray-600 text-justify">
-            Esta comunidad cuenta con millones de usuarios de todo el mundo, personas curiosas y con ganas de explorar y expresar su creatividad.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Course Categories Section -->
     <section
